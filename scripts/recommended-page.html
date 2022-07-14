@@ -1,0 +1,244 @@
+<!-- Author: Sebastian Aguirre Duque
+E-mail: sadw621@gmail.com -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/recommended-page.css">
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.7/dist/flowbite.min.css" />
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" rel="stylesheet">
+  <title>Recommended</title>
+</head>
+
+<body>
+
+  <div class="flex flex-col mx-auto gap-y-6 main-container">
+
+    <div class="flex flex-row header-spacer child-container">
+      <img class="w-10 h-10" src="../images/Group1.png" alt="">
+      <img class="w-12 h-12 rounded-full" src="../images/Avatar-Profile.png" alt="">
+    </div>
+
+    <div class="flex flex-col child-container">
+      <h2 class="text-3xl font-semibold">Adopt</h2>
+      <h5 class="text-xl">Your favourite soultmate pet</h5>
+    </div>
+
+    <div class="flex child-container">
+
+      <form class="form-size">
+        <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only">Search</label>
+        <div class="relative w-full">
+
+          <input type="search" id="default-search"
+            class="block p-4 pl-2 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="Search your soulmate pet">
+          <button type="submit"
+            class="text-white absolute right-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-4 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            <div class="flex absolute inset-y-0 left-0 items-center px-2 pointer-events-none">
+              <svg class="w-5 h-5 text-white dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+              </svg>
+            </div>
+          </button>
+        </div>
+      </form>
+
+    </div>
+
+    <div id="animation-carousel" class="relative slider-container" data-carousel="slide">
+      <!-- Carousel wrapper -->
+      <div class="overflow-hidden relative rounded-lg sm:h-64 xl:h-80 2xl:h-96">
+        <!-- Item 1 -->
+        <div id="carousel-item-1"
+          class="hidden duration-800 ease-in absolute inset-0 transition-all transform translate-x-0 z-20"
+          data-carousel-item="active">
+          <a id="seeDogs" href="./availables.html">
+            <div class="flex absolute top-1/2 left-1/2 w-28 -translate-x-1/2 -translate-y-1/2 card-category">
+              <img src="../images/Product-1.png">
+              <h1>Dogs</h1>
+            </div>
+          </a>
+        </div>
+        <!-- Item 2 -->
+        <div id="carousel-item-2"
+          class="hidden duration-800 ease-in absolute inset-0 transition-all transform translate-x-full z-10"
+          data-carousel-item="">
+          <a id="seeCats" href="./availables.html">
+            <div class="flex absolute top-1/2 left-1/2 w-28 -translate-x-1/2 -translate-y-1/2 card-category">
+              <img src="../images/Product-2.png">
+              <h1>Cats</h1>
+            </div>
+          </a>
+        </div>
+        <!-- Item 3 -->
+        <div id="carousel-item-3"
+          class="hidden duration-800 ease-in absolute inset-0 transition-all transform -translate-x-full z-10"
+          data-carousel-item="">
+          <a id="seeProducts" href="./avalaibles-food.html">
+            <div class="flex absolute top-1/2 left-1/2 w-28 -translate-x-1/2 -translate-y-1/2 card-category">
+              <img src="../images/Product-3.png">
+              <h1>Pet Food</h1>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- Slider controls -->
+      <button id="data-carousel-prev" type="button"
+        class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none">
+        <span
+          class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-gray-300 slider group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
+          <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+          </svg>
+          <span class="hidden">Previous</span>
+        </span>
+      </button>
+      <button id="data-carousel-next" type="button"
+        class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none">
+        <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-gray-300 slider">
+          <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+          <span class="hidden">Next</span>
+        </span>
+      </button>
+
+    </div>
+
+    <div class="flex flex-col gap-y-4 child-container">
+
+      <h2 class="text-3xl font-semibold">Recommended</h2>
+
+      <div class="card-recommended">
+        <div class="flex flex-row gap-x-8 items-center">
+          <img src="../images/User-1.png" class="card-vector" />
+          <div class="flex flex-col">
+            <h5 class="font-semibold">Nick Factural</h5>
+            <h6>Shelter</h6>
+          </div>
+          <i class="bi bi-heart"></i>
+        </div>
+        <div class="flex flex-row items-center justify-center gap-x-4">
+          <img id="imgDog"
+            class="card-img" />
+          <div class="flex flex-col">
+            <button id="genderDog" type="button"
+              class="text-white bg-red-700 hover:bg-red-800 focus:outline-none focus:ring-4 focus:ring-red-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900"></button>
+            <button id="breedDog" type="button"
+              class="text-white bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:focus:ring-yellow-900"></button>
+            <button id="eyesDog" type="button"
+              class="text-white bg-purple-700 hover:bg-purple-800 focus:outline-none focus:ring-4 focus:ring-purple-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-recommended">
+        <div class="flex flex-row gap-x-8">
+          <img src="../images/User-2.png" class="card-vector" />
+          <div class="flex flex-col">
+            <h5 class="font-semibold">Hans Gfaina</h5>
+            <h6>Shelter</h6>
+          </div>
+          <i class="bi bi-heart"></i>
+        </div>
+        <div class="flex flex-row items-center justify-center gap-x-4">
+          <img id="imgCat" class="card-img" />
+          <div class="flex flex-col">
+            <button id="genderCat" type="button"
+              class="text-white bg-red-700 hover:bg-red-800 focus:outline-none focus:ring-4 focus:ring-red-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900"></button>
+            <button id="eyesCat" type="button"
+              class="text-white bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:focus:ring-yellow-900"></button>
+            <button id="breedCat" type="button"
+              class="text-white bg-purple-700 hover:bg-purple-800 focus:outline-none focus:ring-4 focus:ring-purple-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-recommended">
+        <div class="flex flex-row gap-x-8">
+          <img src="../images/Product-3.png" class="card-vector" />
+          <div class="flex flex-col">
+            <h5 class="font-semibold">Nick Fury</h5>
+            <h6>Pet shop</h6>
+          </div>
+          <i class="bi bi-heart"></i>
+        </div>
+        <div class="flex flex-row items-center justify-center gap-x-4">
+          <img id="imgFood"
+            class="card-img" />
+          <div class="flex flex-col">
+            <button id="forDogs" type="button"
+              class="text-white bg-red-700 hover:bg-red-800 focus:outline-none focus:ring-4 focus:ring-red-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900"></button>
+            <button id="forCats" type="button"
+              class="text-white bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:focus:ring-yellow-900"></button>
+            <button type="button"
+              class="text-white bg-purple-700 hover:bg-purple-800 focus:outline-none focus:ring-4 focus:ring-purple-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">
+              </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="bg-black border-amber-300 px-2 sm:px-4 py-2.5 rounded footer">
+
+      <div class="container flex flex-wrap justify-center items-center mx-auto pt-2">
+
+        <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="">
+          <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+            <li>
+              <a href="#"
+                class="block py-2 pr-4 pl-3 text-white bg-white rounded md:bg-transparent md:text-white-700 md:p-0"
+                aria-current="page"><i class="bi bi-house-door-fill text-lg"></i></a>
+            </li>
+            <li>
+              <a href="#" class="block py-2 pr-4 pl-3 text-white border-b border-gray-100 md:border-0 md:p-0"><i
+                  class="bi bi-cart text-lg"></i></a>
+            </li>
+            <li>
+              <a href="#" class="block py-2 pr-4 pl-3 text-white border-b border-gray-100 md:border-0 md:p-0"><i
+                  class="bi bi-app-indicator text-lg"></i></a>
+            </li>
+            <li>
+              <a href="#" class="block py-2 pr-4 pl-3 text-white border-b border-gray-100 md:border-0 md:p-0"><i
+                  class="bi bi-bookmark-heart text-lg"></i></a>
+            </li>
+            <li>
+              <a href="#" class="block py-2 pr-4 pl-3 text-white border-b border-gray-100 md:border-0 md:p-0"><i
+                  class="bi bi-person-fill text-lg"></i></a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+    </nav>
+
+  </div>
+
+
+
+
+
+  <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
+  <script src="./Carousel.js"></script>
+  <script type="module" src="./dog-cards-info.js"></script>
+  <script type="module" src="./cat-cards-info.js"></script>
+  <script type="module" src="./food-cards-info.js"></script>
+  <script type="module" src="./open-categories.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!-- Author: Sebastian Aguirre Duque
+E-mail: sadw621@gmail.com -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/home.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" rel="stylesheet">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <title>Adopt Me App</title>
+</head>
+
+<body>
+
+  <div class="flex flex-col w-3/4 h-3/4 mx-auto gap-y-10 main-container">
+
+    <div class=" flex justify-center mx-auto p-2">
+      <img src="./images/Vector1-Home.png" class="vector" />
+      <img src="./images/Home-Img.png" class="home-img" />
+    </div>
+
+    <div class=" flex flex-col justify-center mx-auto p-2">
+      <h1 class="justify-self-center self-center text-3xl font-semibold">Adopt Stray Pets</h1>
+      <h3 clas="justify-self-center self-center text-xl">Find the best pet near you and adopt your favourite one.</h3>
+    </div>
+
+    <div>
+      <a href="./scripts/recommended-page.html" target="_self">
+        <button id="adoptNow" type="button"
+          class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-4 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">Adopt
+          Now</button>
+      </a>
+    </div>
+
+  </div>
+
+
+
+
+  <script type="module" src="./scripts/start.js"></script>
+  <script type="module" src="./scripts/set-cards.js"></script>
+
+</body>
+
+</html>

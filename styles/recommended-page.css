@@ -1,0 +1,80 @@
+/* Author: Sebastian Aguirre Duque
+E-mail: sadw621@gmail.com */
+
+
+.main-container {
+  width: 75%;
+  font-family: 'Nunito', sans-serif;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.child-container {
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-spacer {
+  gap: 300px;
+  margin-top: 15px;
+}
+
+.form-size {
+  width: 55%;
+}
+
+.slider-container {
+  width: 35% !important;
+  height: 100% !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider:hover {
+  background-color: rgb(75 85 99);
+}
+
+.card-recommended {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 43%;
+  height: 53%;
+  border: 1px solid rgb(170, 170, 170);
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.card-img {
+  width: 40%;
+  border-radius: 15px;
+}
+
+.card-vector {
+  width: 15%;
+  height: 15%;
+}
+
+.card-category {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  width: 60%;
+  height: 20%;
+  border: 1px solid rgb(170, 170, 170);
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.footer {
+  width: 60%;
+  height: 7%;
+  position: fixed;
+  bottom: 0;
+}
